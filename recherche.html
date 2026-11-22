@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche | CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <img src="images/logo.jpg" alt="Logo UPAC" class="logo">
+        <span>Campus<span class="brand-accent">Connect</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="facultes.html">Facultés</a>
+        <a href="services.html">Services</a>
+        <a href="evenements.html">Événements</a>
+        <a class="active" href="recherche.html">Recherche</a>
+        <a href="apropos.html">À propos</a>
+    </nav>
+</header>
+
+<main class="page-main">
+
+    <section class="page-banner">
+        <span class="eyebrow">TROUVE RAPIDEMENT</span>
+        <h1>Recherche</h1>
+        <p>Recherche une information sur ton campus.</p>
+    </section>
+
+    <section class="search-panel">
+        <label for="campusSearch">Que recherches-tu ?</label>
+
+        <div class="search-box">
+            <input
+                id="campusSearch"
+                type="search"
+                placeholder="Ex. informatique, bibliothèque, conférence..."
+            >
+            <button type="button" id="searchButton">Rechercher</button>
+        </div>
+
+        <p id="searchMessage" class="search-hint">
+            Saisis un mot-clé pour commencer.
+        </p>
+
+        <div id="searchResults" class="search-results"></div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>© 2026 CampusConnect</p>
+</footer>
+
+</body>
+</html>
